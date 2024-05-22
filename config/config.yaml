@@ -4,10 +4,10 @@ App:
   url: "127.0.0.1:8080"
 
 Mysql:
-  dsn: root:qz1731978669@tcp(8.137.100.0:3306)/backend?charset=utf8mb4&parseTime=True&loc=Local
+  dsn: root:1234@tcp(127.0.0.1:3306)/backend?charset=utf8mb4&parseTime=True&loc=Local
 
 Redis:
-  addr: 8.137.100.0:6379
+  addr: 127.0.0.1:6379
   password: "1234"
   db: 0
   poolSize: 30
@@ -28,12 +28,11 @@ Mail:
   smtp:
     host: smtp.qq.com
 #    host:  smtp.aliyun.com
-    port:  587
-    username: 1731978669@qq.com
-    password:  pgyrpvxaxvngdced
-    ssl_port: 465
+    port:  25
+    username: test@qq.com
+    password:  123456
   from:
-    address: 1731978669@qq.com
+    address: test@qq.com
     name: 邮箱助手
 
 Verifycode:
